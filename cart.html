@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ataraxia Café — Carrito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="cart">
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="Ataraxia Café" class="brand-logo" onerror="this.style.display='none'"/>
+      <span class="brand-name">Ataraxia Café</span>
+    </div>
+    <nav class="nav">
+      <a class="nav-link" href="index.html">Inicio</a>
+      <a class="nav-link active" href="cart.html">Carrito <span class="cart-count" id="headerCartCount">0</span></a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Tu carrito</h1>
+    <section id="cartList" class="cart-list"></section>
+
+    <aside class="cart-summary" id="cartSummary">
+      <div class="row"><span>Subtotal</span><strong id="summarySubtotal">$0</strong></div>
+      <div class="row"><span>Envío</span><strong id="summaryShipping">$0</strong></div>
+      <div class="row total"><span>Total</span><strong id="summaryTotal">$0</strong></div>
+      <div class="actions">
+        <a href="index.html" class="btn btn-outline">Seguir comprando</a>
+        <button id="clearCartBtn" class="btn btn-outline" type="button">Vaciar carrito</button>
+        <a href="checkout.html" class="btn">Continuar</a>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Ataraxia Café</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ataraxia Café — Envío</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="checkout">
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="Ataraxia Café" class="brand-logo" onerror="this.style.display='none'"/>
+      <span class="brand-name">Ataraxia Café</span>
+    </div>
+    <nav class="nav">
+      <a class="nav-link" href="index.html">Inicio</a>
+      <a class="nav-link" href="cart.html">Carrito</a>
+      <a class="nav-link active" href="checkout.html">Envío</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Datos de entrega</h1>
+    <form id="shippingForm" class="form">
+      <div class="form-row">
+        <label for="recipient">Destinatario</label>
+        <input id="recipient" name="recipient" type="text" placeholder="Nombre y apellido" required />
+      </div>
+      <div class="form-row">
+        <label for="address">Dirección</label>
+        <input id="address" name="address" type="text" placeholder="Calle, número, piso, depto" required />
+      </div>
+      <div class="form-row">
+        <label for="phone">Teléfono</label>
+        <input id="phone" name="phone" type="tel" placeholder="Ej: 11 1234-5678" required />
+      </div>
+      <div class="form-row">
+        <label for="notes">Notas para el repartidor</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="Portero, timbre, referencias, etc."></textarea>
+      </div>
+      <div class="form-actions">
+        <a class="btn btn-outline" href="cart.html">Volver</a>
+        <button type="submit" class="btn">Confirmar pedido</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Ataraxia Café</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

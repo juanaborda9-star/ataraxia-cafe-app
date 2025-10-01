@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ataraxia Café — Catálogo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="catalog">
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="Ataraxia Café" class="brand-logo" onerror="this.style.display='none'"/>
+      <span class="brand-name">Ataraxia Café</span>
+    </div>
+    <nav class="nav">
+      <a class="nav-link active" href="index.html">Inicio</a>
+      <a class="nav-link" href="cart.html">Carrito <span class="cart-count" id="headerCartCount">0</span></a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero hero-with-logo">
+      <div class="hero-text">
+        <h1>Serenidad en cada sorbo</h1>
+        <p>Elegí tus bebidas y algo rico para acompañar. ¡Lo llevamos hasta tu puerta!</p>
+      </div>
+      <div class="hero-logo">
+        <img src="assets/logo.svg" alt="Logo Ataraxia Café" onerror="this.style.display='none'"/>
+      </div>
+    </section>
+
+    <section class="catalog-section">
+      <h2 class="section-title">Bebidas</h2>
+      <div id="beveragesGrid" class="grid"></div>
+    </section>
+
+    <section class="catalog-section">
+      <h2 class="section-title">Comidas</h2>
+      <div id="foodsGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <a href="cart.html" class="fab-cart" aria-label="Ir al carrito">
+    <span>🛒</span>
+    <strong id="fabCartCount">0</strong>
+  </a>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Ataraxia Café. Hecho con ☕</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
